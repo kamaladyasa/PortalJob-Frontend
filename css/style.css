@@ -21,7 +21,7 @@
 }
 .banner {
   height: 70vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/hero-image.png);
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/hero-image.png);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -41,7 +41,7 @@
   background-image: linear-gradient(to right, #f2f2f2, #b2b2b2)
 }
 .search-job .form-control {
-  max-width: 250px;
+  max-width: 400px;
   display: inline-flex;
   margin: 10px 5px;
   border-radius: 5px;
@@ -57,7 +57,7 @@
   padding: 5px 20px;
 }
 
-/*----------- TOP RECRITERS ------------*/
+/*----------- TOP RECRUITERS ------------*/
 
 #recruiters {
   padding-bottom: 50px;
@@ -129,4 +129,24 @@ h3::before {
   box-shadow: none !important;
   background: transparent;
   border: 1px solid #fff;
+}
+
+/*----------- Register ------------*/
+#register {
+  padding-bottom: 50px;
+  padding-top: 70px;
+}
+#register h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.register {
+  box-shadow: 0 2px 70px rgba(110,130,208, .18);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 40px;
+}
+.form-register {
+  max-width: 30%;
+  margin: auto;
 }

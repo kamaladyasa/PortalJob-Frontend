@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Job Search</title>
+  <link rel="icon" href="images/logo.png">
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+  <!-----------HEADER------------->
+  
+  <section id="header">
+    <div class="menu-bar text-center fixed-top">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/images/logotext.png" width="190" height="50" class="d-inline-block align-top">
+      </a>
+    </div>
+  </section>
+  
+  <!-----------Content------------->
+
+  <section id="register">
+    <div class="container register">
+      <h2>JobSearch for Company</h2>
+      <div class="form-register">
+        <form>
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="inputName">Company Name</label>
+            <input type="text" class="form-control" id="company_name">
+          </div>
+          <div class="form-group">
+            <label for="profileDescription">Profile Description</label>
+            <textarea class="form-control" id="profile_description" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="website">Website</label>
+            <input type="text" class="form-control" id="website">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea class="form-control" id="address" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="inputcity">City</label>
+              <input type="email" class="form-control" id="city">
+          </div>
+          <div class="form-group">
+            <label for="inputNumber">Contact Number</label>
+            <input type="text" class="form-control" id="contact_number" placeholder="+62">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="password" aria-describedby="passwordHelpInline">
+            <small id="passwordHelpInline" class="text-muted">
+            Must be 8-20 characters long.
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <small>Already have an account? <a href="login.html">Login</a></small>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
