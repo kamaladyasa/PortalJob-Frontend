@@ -28,36 +28,36 @@
     <div class="container register">
       <h2>Bergabung dengan JobSearch</h2>
       <div class="form-register">
-        <form>
+        <form id="registerUser">
           <div class="form-group">
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control" name="email">
           </div>
           
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputName4">First Name</label>
-              <input type="text" class="form-control" id="first_name">
+              <input type="text" class="form-control" name="first_name">
             </div>
             <div class="form-group col-md-6">
               <label for="inputName4">Last Name</label>
-              <input type="text" class="form-control" id="last_name">
+              <input type="text" class="form-control" name="last_name">
             </div>
           </div>
           
           <div class="form-group">
             <label for="example-date-input">Date of Birth</label>
-            <input type="date" class="form-control" value="2011-08-19" id="date_of_birth">
+            <input type="date" class="form-control" value="2011-08-19" name="date_of_birth">
           </div>
           
           <div class="form-row">
             <div class="form-group col-md-8">
               <label for="inputNumber">Contact Number</label>
-              <input type="text" class="form-control" id="contact_number" placeholder="+62">
+              <input type="text" class="form-control" name="contact_number" placeholder="+62">
             </div>
             <div class="form-group col-md-4">
               <label for="inputGender">Gender</label>
-              <select id="inputState" class="form-control">
+              <select name="gender" class="form-control">
                 <option selected>Choose...</option>
                 <option>Male</option>
                 <option>Female</option>
@@ -66,20 +66,18 @@
           </div>
           <div class="form-group">
             <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="password" aria-describedby="passwordHelpInline">
+            <input type="password" class="form-control" name="password" aria-describedby="passwordHelpInline">
             <small id="passwordHelpInline" class="text-muted">
             Must be 8-20 characters long.
             </small>
           </div>
-          <div class="form-group">
-            <label for="inputPassword">Confirm Password</label>
-            <input type="password" class="form-control" id="password">
-          </div>
-          <button type="submit" class="btn btn-primary" id="submit">Sign Up</button>
+          <button type="submit" class="btn btn-primary" id="submit-btn">Sign Up</button>
         </form>
         <small>Already have an account? <a href="login.html">Login</a></small>
       </div>
     </div>
   </section>
+
+  <script src="/js/registeruser.js"></script>
 </body>
 </html>

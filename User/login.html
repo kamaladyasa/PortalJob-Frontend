@@ -28,19 +28,21 @@
     <div class="container register">
       <h2>Login JobSearch</h2>
       <div class="form-register">
-        <form>
+        <form id="login-user">
           <div class="form-group">
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
           </div>
           <div class="form-group">
             <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="password">
+            <input type="password" class="form-control" name="password" >
           </div>
-          <button type="submit" class="btn btn-primary">Sign In</button>
+          <button type="submit" class="btn btn-primary" id="btn-loginUser">Sign In</button>
         </form>
       </div>
     </div>
   </section>
+
+  <script src="/js/loginuser.js"></script>
 </body>
 </html>

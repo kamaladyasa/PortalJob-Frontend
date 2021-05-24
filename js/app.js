@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const noLog = document.querySelector("#logout");
+  const yesLog = document.querySelector("#login");
+  
+  if (!localStorage.email) {
+    noLog.style.display = "block";
+    yesLog.style.display = "none";
+  } else {
+    noLog.style.display = "none";
+    yesLog.style.display = "block";
+  }
+
+
+  const signout = document.querySelector("#signout");
+  signout.addEventListener("click", (e) => {
+    e.preventDefault();
+    delete localStorage.email;
+    window.location.href = "index.html";
+  });
+
+
   fetch ('http://127.0.0.1:5000/users/job-lists/')
   .then((res) => res.json())
   .then((data) => {
