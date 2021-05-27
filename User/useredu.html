@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Job Search</title>
+  <link rel="icon" href="/images/logo.png">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <script src="https://kit.fontawesome.com/eaf409f962.js"></script>
+</head>
+<body>
+  <!-----------HEADER------------->
+  
+  <section id="header">
+    <div class="menu-bar fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/indexuser.html">
+          <img src="/images/logotext.png" width="190" height="50" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/indexuser.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="userprofile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="signout">Logout</a>
+              </li>
+            </ul>
+          </ul>
+        
+        </div>
+      </nav>
+    </div>
+  </section>
+  
+  <!-----------Content------------->
+  
+  <section id="register">
+    <div class="container register">
+      <h2>Add Education Detail</h2>
+      <div class="form-register">
+        <form id="formEdu">
+          <div class="form-group">
+            <label for="inputLv">Level Education</label>
+              <select name="level_education" class="form-control">
+                <option selected>Choose...</option>
+                <option>S2</option>
+                <option>S1</option>
+                <option>D4</option>
+                <option>S3</option>
+                <option>SMA</option>
+              </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="inputUniv">University Name</label>
+            <input type="text" class="form-control" name="univ_name">
+          </div>
+
+          <div class="form-group">
+            <label for="inputMAjor">Major</label>
+            <input type="text" class="form-control" name="major">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputStart">Start Date</label>
+              <input type="date" class="form-control" value="2011-08-19" name="start_date">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEnd">Complete Date</label>
+              <input type="date" class="form-control" value="2011-08-19" name="complete_date">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputGpa">GPA</label>
+            <input type="text" class="form-control" name="gpa">
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit-btn">Add Education</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="#"></script>
+</body>
+</html>

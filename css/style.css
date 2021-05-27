@@ -150,3 +150,23 @@ h3::before {
   max-width: 30%;
   margin: auto;
 }
+
+/*----------- Register ------------*/
+#profile-img {
+  display: inline;
+  height: 230px;
+  width: auto;
+  margin-top: -25px;
+  margin-left: auto;
+}
+.profile {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  width: auto;
+  height: auto;
+}
+.table-profile {
+  text-align: left;
+  margin: auto;
+}

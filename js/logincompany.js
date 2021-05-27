@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const loginBtn = document.querySelector("#btn-loginUser");
+  const loginBtn = document.querySelector("#btn-loginCom");
   loginBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    const logForm = document.querySelector("#login-user");
+    const logForm = document.querySelector("#login-company");
     let logData = new FormData(logForm);
     let data = Object.fromEntries(logData);
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       Authorization: auth,
     };
 
-    fetch(`http://127.0.0.1:5000/user/login/`, {
+    fetch(`http://127.0.0.1:5000/company/login/`, {
       method: "POST",
       headers: head,
       credentials: "same-origin",
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => {
         if (response["email"]) {
           localStorage.email = response["email"];
-          window.location.href = "/indexuser.html";
+          window.location.href = "/indexcompany.html";
         } else {
           return alert(response["error"]);
         }

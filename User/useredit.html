@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Job Search</title>
+  <link rel="icon" href="/images/logo.png">
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+  <!-----------HEADER------------->
+  
+  <section id="header">
+    <div class="menu-bar fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/indexuser.html">
+          <img src="/images/logotext.png" width="190" height="50" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/indexuser.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="userprofile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="signout">Logout</a>
+              </li>
+            </ul>
+          </ul>
+        
+        </div>
+      </nav>
+    </div>
+  </section>
+  
+  <!-----------Content------------->
+
+  <section id="register">
+    <div class="container register">
+      <h2>Edit User Profile</h2>
+      <div class="form-register">
+        <form id="editUser">
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" name="email">
+          </div>
+          <div class="form-group">
+            <label for="inputName">First Name</label>
+            <input type="text" class="form-control" name="first_name">
+          </div>
+          <div class="form-group">
+            <label for="inputName">Last Name</label>
+            <input type="text" class="form-control" name="last_name">
+          </div>
+          
+          <div class="form-group">
+            <label for="example-date-input">Date of Birth</label>
+            <input type="date" class="form-control" value="2011-08-19" name="date_of_birth">
+          </div>
+
+          <div class="form-group">
+            <label for="inputNumber">Contact Number</label>
+            <input type="text" class="form-control" name="contact_number" placeholder="+62">
+          </div>
+          <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/edituser.js"></script>
+</body>
+</html>
